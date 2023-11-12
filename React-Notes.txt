@@ -1,0 +1,39 @@
+                                       React-Notes
+                                       ===========
+
+Method comments are allowed but in order to use them within JSX, you have to wrap them in braces and use multi-line style comments.
+
+{/* */}
+
+===========================================================================================
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+===========================================================================================
+
+To Fix
+======
+
+Server running on http://localhost:3000 [development]
+Warning: componentWillMount has been renamed, and is not recommended for use. Se
+e https://fb.me/react-unsafe-component-lifecycles for details.
+
+* Move code from componentWillMount to componentDidMount (preferred in most case
+s) or the constructor.
+
+Please update the following components: SideEffect(NullComponent)
+GET /user/signup 200 10510 - 113.939 ms
